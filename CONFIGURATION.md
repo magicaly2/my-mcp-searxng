@@ -1,6 +1,6 @@
 # Configuration Reference
 
-All environment variables for `mcp-searxng`, organized by concern. All variables are optional unless marked required.
+All environment variables for `my-mcp-searxng`, organized by concern. All variables are optional unless marked required.
 
 ## Core
 
@@ -68,7 +68,7 @@ Complete MCP client configuration with every variable. Mix and match as needed â
   "mcpServers": {
     "searxng": {
       "command": "npx",
-      "args": ["-y", "mcp-searxng"],
+      "args": ["-y", "my-mcp-searxng"],
       "env": {
         "SEARXNG_URL": "YOUR_SEARXNG_INSTANCE_URL",
         "AUTH_USERNAME": "your_username",

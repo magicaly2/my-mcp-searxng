@@ -1,0 +1,16 @@
+services:
+  my-mcp-searxng:
+    image: my-mcp-searxng:latest
+    container_name: my-mcp-searxng
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8005:8005"
+    environment:
+      SEARXNG_URL: http://host.docker.internal:3001
+      # MCPO_API_KEY: top-secret
+
+networks:
+  openwebui-net:
+    external: true

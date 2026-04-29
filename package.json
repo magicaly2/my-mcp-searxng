@@ -1,7 +1,7 @@
 {
-    "name": "mcp-searxng",
+    "name": "my-mcp-searxng",
     "version": "1.0.3",
-    "mcpName": "io.github.ihor-sokoliuk/mcp-searxng",
+    "mcpName": "io.github.ihor-sokoliuk/my-mcp-searxng",
     "description": "MCP server for SearXNG integration",
     "license": "MIT",
     "author": "Ihor Sokoliuk (https://github.com/ihor-sokoliuk)",
@@ -25,7 +25,7 @@
     ],
     "type": "module",
     "bin": {
-        "mcp-searxng": "dist/index.js"
+        "my-mcp-searxng": "dist/index.js"
     },
     "main": "dist/index.js",
     "files": [

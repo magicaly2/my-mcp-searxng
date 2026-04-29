@@ -8,7 +8,7 @@ export function createConfigResource() {
 
   const config = {
     serverInfo: {
-      name: "ihor-sokoliuk/mcp-searxng",
+      name: "ihor-sokoliuk/my-mcp-searxng",
       version: packageVersion,
       description: "MCP server for SearXNG integration"
     },
@@ -42,20 +42,25 @@ This is a Model Context Protocol (MCP) server that provides web search capabilit
 ## Available Tools
 
 ### 1. searxng_web_search
-Performs web searches using the configured SearXNG instance.
+Execute web searches with pagination.
 
 **Parameters:**
-- \`query\` (required): The search query string
-- \`pageno\` (optional): Page number (default: 1)
-- \`time_range\` (optional): Filter by time - "day", "month", or "year"
-- \`language\` (optional): Language code like "en", "fr", "de" (default: "all")
-- \`safesearch\` (optional): Safe search level - 0 (none), 1 (moderate), 2 (strict)
+- \`query\` (required): The search query. This string is passed to external search services.
+- \`pageno\` (optional): Search page number, starts at 1 (default: 1)
+- \`time_range\` (optional): Filter results by time range - one of: "day", "month", "year" (default: none)
+- \`language\` (optional): Language code for results (e.g., "en", "fr", "de") or "all" (default: "all")
+- \`safesearch\` (optional): Safe search filter level (0: None, 1: Moderate, 2: Strict) (default: instance setting)
 
 ### 2. web_url_read
-Reads and converts web page content to Markdown format.
+Read and convert the content from a URL to markdown with advanced content extraction options.
 
 **Parameters:**
-- \`url\` (required): The URL to fetch and convert
+- \`url\` (required): The URL to fetch and process
+- \`startChar\` (optional): Starting character position for content extraction (default: 0)
+- \`maxLength\` (optional): Maximum number of characters to return
+- \`section\` (optional): Extract content under a specific heading (searches for heading text)
+- \`paragraphRange\` (optional): Return specific paragraph ranges (e.g., '1-5', '3', '10-')
+- \`readHeadings\` (optional): Return only a list of headings instead of full content
 
 ## Configuration
 

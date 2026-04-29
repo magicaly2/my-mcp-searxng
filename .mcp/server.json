@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ihor-sokoliuk/mcp-searxng",
+  "name": "io.github.ihor-sokoliuk/my-mcp-searxng",
   "title": "SearXNG Search",
   "description": "MCP server for SearXNG — privacy-respecting web search with pagination, URL reading",
   "repository": {
@@ -11,7 +11,7 @@
   "packages": [
     {
       "registryType": "npm",
-      "identifier": "mcp-searxng",
+      "identifier": "my-mcp-searxng",
       "version": "1.0.3",
       "transport": {
         "type": "stdio"

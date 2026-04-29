@@ -1,12 +1,12 @@
-# Contributing to mcp-searxng
+# Contributing to my-mcp-searxng
 
 We welcome contributions! Follow these guidelines to get started.
 
 ## Getting Started
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mcp-searxng.git
-cd mcp-searxng
+git clone https://github.com/YOUR_USERNAME/my-mcp-searxng.git
+cd my-mcp-searxng
 git remote add upstream https://github.com/ihor-sokoliuk/mcp-searxng.git
 npm install
 ```

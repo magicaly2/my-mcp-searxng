@@ -202,7 +202,7 @@ export async function createHttpServer(
   app.get('/health', (_req, res) => {
     res.json({ 
       status: 'healthy',
-      server: 'ihor-sokoliuk/mcp-searxng',
+      server: 'ihor-sokoliuk/my-mcp-searxng',
       version: packageVersion,
       transport: 'http'
     });

@@ -76,7 +76,7 @@ export function isWebUrlReadArgs(args: unknown): args is {
 export function createMcpServer(): McpServer {
   const mcpServer = new McpServer(
     {
-      name: "ihor-sokoliuk/mcp-searxng",
+      name: "ihor-sokoliuk/my-mcp-searxng",
       version: packageVersion,
     },
     {
